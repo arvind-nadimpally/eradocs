@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fef107f-2f0c-424e-839e-8846c7f6b3c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api-reference/introduction.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eradocs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/starter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-reference/authentication.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/api-reference/authentication.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-reference/endpoint/get.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/api-reference/endpoint/get.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo/ERA-Smarthome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mint.json" beforeDir="false" afterPath="$PROJECT_DIR$/mint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +27,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Arvind/Code/mintlify/eraDocs-ssh/eradocs/logo"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Arvind\Code\mintlify\eraDocs-ssh\eradocs\logo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Arvind\Code\mintlify\eraDocs-ssh\eradocs\api-reference" />
     </key>
