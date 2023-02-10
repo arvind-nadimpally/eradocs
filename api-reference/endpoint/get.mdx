@@ -1,27 +1,21 @@
 ---
-title: "Get User"
-api: "GET https://api.mintlify.com/api/user"
-description: "This endpoint gets or creates a new user."
+title: "Device User"
+api: "GET https://4imaw8jhbf.execute-api.eu-west-1.amazonaws.com/appserver/user/deviceUser"
+description: "This endpoint gets all the user's details."
 ---
 
 ### Body
 
-<ParamField body="name" type="string">
-  This is the name of the user group.
+<ParamField body="deviceId" type="string">
+  This is the deviceId of the user's mobile.
 </ParamField>
 
-<ParamField body="user_group_id" type="string">
-  This is the ID you use to identify this user group in your database.
+<ParamField body="deviceType" type="string">
+  This is the device type of the user.
 </ParamField>
 
-<ParamField body="mapping" type="object">
-  This is a JSON mapping of schema id to either the data source that this user group should be
-  associated with or id of the datasource you provided when creating it.
-</ParamField>
-
-<ParamField body="properties" type="object">
-  This is a JSON object for properties assigned to this user group. These will be accessible through
-  variables in the dashboards and SQL editor
+<ParamField body="userName" type="string">
+  This is the username of the user which he uses to login to the App.
 </ParamField>
 
 ### Response
@@ -70,15 +64,7 @@ The contents of the user group
 <RequestExample>
 
 ```bash Example Request
-curl --location --request GET 'https://api.mintlify.com/api/user' \
---header 'Content-Type: application/json' \
---header 'Authorization: Token <token>' \
---data-raw '{
-    "user_group_id": "example_1",
-    "name": "Example 1",
-    "mapping": {"40": "213", "134": "386"},
-    "properties": {"filterValue": "value"}
-}'
+    deviceUser(deviceId: "", deviceType: "", userName: "")
 ```
 
 </RequestExample>
@@ -86,16 +72,21 @@ curl --location --request GET 'https://api.mintlify.com/api/user' \
 <ResponseExample>
 
 ```json Response
-{
-  "success": 1,
-  "new_user_group": true,
-  "user_group": {
-    "team_id": 3,
-    "token": "<user_group_token_to_auth_dashboard>",
-    "name": "Example 1",
-    "provided_id": "example_1"
+response {
+      action
+      code
+      description
+      status
+    }
+    dataList {
+      user {
+        username
+        email1
+        firstName
+        surname
+      }
+    }
   }
-}
 ```
 
 </ResponseExample>
